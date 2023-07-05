@@ -3,7 +3,7 @@ require 'capybara/rspec'
 require 'selenium-webdriver'
 require 'site_prism'
 require 'pry'
-require 'webdrivers'
+require_relative 'prints.rb'
 
 
 ENVIRONMENT = ENV['ENVIRONMENT']
