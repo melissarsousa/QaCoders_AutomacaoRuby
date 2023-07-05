@@ -12,7 +12,7 @@ puts "Environment >> #{ENVIRONMENT}"
 CONFIG = YAML.load_file(File.dirname(__FILE__) + "/environment/#{ENVIRONMENT}.yml")
 
 Capybara.configure do |config|
-    config.default_driver = :selenium_chrome #browser default
-    config.app_host = CONFIG['https://qacoders.dev.br'] #irá abrir nos testes
-    config.default_max_wait_time = 10 #tempo máximo de espera para o elemento
+    config.default_driver = :selenium_chrome
+    config.app_host = CONFIG['url_default']
+    config.default_max_wait_time = 10 
 end
