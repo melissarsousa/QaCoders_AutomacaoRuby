@@ -18,7 +18,8 @@ After do |scenario|
 
     if scenario.failed?
         take_screenshot(nome, '#{folder_p}/failed_test')
+    
     else
         take_screenshot(nome, '#{folder_p}/success_test')
-
+    end
 end

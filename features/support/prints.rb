@@ -6,5 +6,6 @@ module Prints
         FileUtils.mkdir_p(folder) unless File.exist?
         Capybara.page.driver.browser.save_screenshot(file)
         attach(file, 'image/png')
+    end
 
 end
